@@ -1,5 +1,5 @@
 # cratering-gravity
-EOSC 454 Final Project investigating how to model density profiles from gravity anomalies caused by Lunar cratering events.
+EOSC 454 Final Project investigating how to model density profiles from gravity anomalies caused by Lunar cratering events. (It would be great give some info whether the simulation is 2D or 3D)
 
 To begin with, please install the environment file found within the repository (cratering-gravity.yml)
 

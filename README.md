@@ -5,7 +5,7 @@ To begin with, please install the environment file found within the repository (
 
 ## Installation Instructions
 
-To install the required dependencies for this project, you can create a Conda environment using the provided environment.yml file.
+To install the required dependencies for this project, you can create a Conda environment using the provided cratering-gravity.yml environment file.
 
 1. **Clone the Repository**: Clone this GitHub repository to your local machine.
 
@@ -37,4 +37,9 @@ conda activate cratering-gravity
 conda list
 ```
 
+This project uses SimPEG gravity modules and possibly Fatiando a Terra. To familiarise yourself with these modules, tutorials/documentation have been provided below:
+
+***SimPEG***: https://simpeg.xyz/user-tutorials/gravity-index
+
+***Fatiando a Terra***: https://www.fatiando.org/
 

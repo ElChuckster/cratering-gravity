@@ -10,7 +10,7 @@ To install the required dependencies for this project, you can create a Conda en
 1. **Clone the Repository**: Clone this GitHub repository to your local machine.
 
 ```bash
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/ElChuckster/cratering-gravity.git
 ```
 
 2.1.***Navigate to the Repository***: Change the directory you're currently working in to the directory of the cloned repository on your device.

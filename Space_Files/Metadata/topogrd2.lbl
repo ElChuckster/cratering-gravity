@@ -1,0 +1,41 @@
+PDS_VERSION_ID               = "PDS3"
+
+RECORD_TYPE                  = FIXED_LENGTH
+RECORD_BYTES                 = 84
+FILE_RECORDS                 = 103680
+^ARRAY                       = "TOPOGRD2.DAT"
+
+SPACECRAFT_NAME              = "CLEMENTINE 1"
+TARGET_NAME                  = "MOON"
+INSTRUMENT_NAME              = "LIDAR"
+DATA_SET_ID                  = "CLEM1-L-LIDAR-5-TOPO-V1.0"
+PRODUCT_ID                   = "TOPOGRD2-DAT"
+PRODUCT_RELEASE_DATE         = 1996-01-01
+DESCRIPTION                  = "This file contains a digital,
+0.25 X 0.25 degree resolution grid of the topography of the Moon
+relative to a spheroid of radius 1738 km at the equator, with
+a flattening of 1/3234.93.  The data are interpolated from the
+filtered observations by the 'blockmean and surface programs' of
+the GMT-system of Wessel and Smith (EOS, Transactions American
+Geophysical Union, v.72, p. 441-446, 1991).  It is a 1440 X 720
+grid from 89.875 to -89.875 degrees latitude, and 0.125 to
+359.875 degrees longitude.  No attempt has been made to provide
+data at the poles (i.e. beyond about 78 degrees), since the
+numbers are unconstrained.  The observation is topography in
+meters."
+
+OBJECT                   = ARRAY
+  NAME                       = "2-D GRID OF TOPOGRAPHY"
+  INTERCHANGE_FORMAT         = ASCII
+  AXES                       = 2
+  AXIS_ITEMS                 = (720,1440)
+  AXIS_NAME                  = ("LATITUDE","LONGITUDE")
+  AXIS_UNIT                  = (DEGREES,DEGREES)
+  AXIS_INTERVAL              = (0.25,0.25)
+  FORMAT                     = "F8.1"
+  SAMPLE_BITS                = 64
+  DESCRIPTION                = "This is a 2-D grid of the
+  topography of the Moon in meters"
+END_OBJECT               = ARRAY
+
+END

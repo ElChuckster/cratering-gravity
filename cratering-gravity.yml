@@ -23,4 +23,6 @@ dependencies:
   - sympy=1.12
   - pip:
     - nbconvert[webpdf]
+    - boule
+    - harmonica
     - git+https://github.com/geoscixyz/geosci-labs

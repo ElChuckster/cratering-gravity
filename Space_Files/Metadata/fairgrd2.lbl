@@ -1,0 +1,36 @@
+PDS_VERSION_ID               = "PDS3"
+
+RECORD_TYPE                  = FIXED_LENGTH
+RECORD_BYTES                 = 84
+FILE_RECORDS                 = 103680
+^ARRAY                       = "FAIRGRD2.DAT"
+
+SPACECRAFT_NAME              = "CLEMENTINE 1"
+TARGET_NAME                  = "MOON"
+INSTRUMENT_NAME              = "RADIO SCIENCE SUBSYSTEM"
+DATA_SET_ID                  = "CLEM1-L-RSS-5-GRAVITY-V1.0"
+PRODUCT_ID                   = "FAIRGRD2-DAT"
+PRODUCT_RELEASE_DATE         = 1996-01-01
+DESCRIPTION                  = "This file contains a digital,
+0.25 X 0.25 degree resolution grid of free-air gravity
+accelerations of the Moon.  It is a 1440 X 720 grid from 89.875
+to -89.875 degrees latitude, and 0.125 to 359.875 degrees
+longitude.  The gravity anomalies are derived from the 70th-
+degree and -order spherical harmonic gravity model, GLGM-2.  The
+observation is free-air gravity in milligals."
+
+OBJECT                   = ARRAY
+  NAME                       = "2-D GRID OF FREE-AIR GRAVITY"
+  INTERCHANGE_FORMAT         = ASCII
+  AXES                       = 2
+  AXIS_ITEMS                 = (720,1440)
+  AXIS_NAME                  = ("LATITUDE","LONGITUDE")
+  AXIS_UNIT                  = (DEGREES,DEGREES)
+  AXIS_INTERVAL              = (0.25,0.25)
+  FORMAT                     = "F8.2"
+  SAMPLE_BITS                = 64
+  DESCRIPTION                = "This is a 2-D grid of the
+  free-air gravity accelerations of the Moon in milligals"
+END_OBJECT               = ARRAY
+
+END

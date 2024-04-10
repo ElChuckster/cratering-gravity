@@ -1,0 +1,40 @@
+PDS_VERSION_ID               = "PDS3"
+
+RECORD_TYPE                  = FIXED_LENGTH
+RECORD_BYTES                 = 84
+FILE_RECORDS                 = 6480
+^ARRAY                       = "BOUGGRD.DAT"
+
+SPACECRAFT_NAME              = "CLEMENTINE 1"
+TARGET_NAME                  = "MOON"
+INSTRUMENT_NAME              = "RADIO SCIENCE SUBSYSTEM"
+DATA_SET_ID                  = "CLEM1-L-RSS-5-GRAVITY-V1.0"
+PRODUCT_ID                   = "BOUGGRD-DAT"
+PRODUCT_RELEASE_DATE         = 1996-01-01
+DESCRIPTION                  = "This file contains a digital,
+1 X 1 degree resolution grid of Bouguer gravity anomalies of the
+Moon.  It is a 360 x 180 grid from 89.5 to -89.5 degrees
+latitude, and 0.5 to 359.5 degrees longitude.  The Bouguer
+anomalies are derived from the 70th-degree and -order spherical
+harmonic gravity model, GLGM-2.  The observation is Bouguer
+gravity in milligals.  The reduction density was 2800 kg/m3 and a
+correction for the added density of the largest mare on the
+nearside (3300 kg/m3) has been applied, using thicknesses given
+in Solomon and Head (Reviews of Geophysics, v. 18, p. 107-141,
+1980)."
+
+OBJECT                   = ARRAY
+  NAME                       = "2-D GRID OF BOUGUER ANOMALIES"
+  INTERCHANGE_FORMAT         = ASCII
+  AXES                       = 2
+  AXIS_ITEMS                 = (180,360)
+  AXIS_NAME                  = ("LATITUDE","LONGITUDE")
+  AXIS_UNIT                  = (DEGREES,DEGREES)
+  AXIS_INTERVAL              = (1.0,1.0)
+  FORMAT                     = "F8.1"
+  SAMPLE_BITS                = 64
+  DESCRIPTION                = "This is a 2-D grid of the
+  Bouguer gravity anomalies of the Moon in milligals."
+END_OBJECT               = ARRAY
+
+END

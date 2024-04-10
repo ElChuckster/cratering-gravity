@@ -24,6 +24,7 @@ dependencies:
   - pandas
   - pygmt
   - geopandas
+  - xarray
   - pip:
     - nbconvert[webpdf]
     - boule

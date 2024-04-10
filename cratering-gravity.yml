@@ -21,6 +21,9 @@ dependencies:
   - setuptools=68.0
   - simpeg=0.20.0
   - sympy=1.12
+  - pandas
+  - pygmt
+  - geopandas
   - pip:
     - nbconvert[webpdf]
     - boule
